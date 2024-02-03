@@ -1,0 +1,13 @@
+@import './../../SCSS/colors.scss';
+.topbar {
+    border-bottom: 1px solid $gray !important;
+    margin-bottom: 0 !important;
+    min-height: 15vh;
+}
+.logo {
+    background-image: url('../../assests/certus-logo-tagline.svg');
+    width: 200px !important;
+    height: 65px !important;
+    background-size: contain;
+    background-repeat: no-repeat;
+}

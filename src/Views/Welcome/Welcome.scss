@@ -1,0 +1,32 @@
+@import '../../SCSS/colors.scss';
+
+.welcome-card {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 85vh;
+    background-color: #2F455C !important;
+    color: white;
+    border-radius: 0 !important;
+    h1 {
+      font-size: 40px;
+    }
+    p {
+      font-size: 20px;
+      width: 80%;
+    }
+}
+
+.sampleIpvImage {
+  background-image: url("../../assests/images/sampleimg.jpg");
+  width: 300px;
+  height: 300px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 1px 1px 2px 1px $black;
+}

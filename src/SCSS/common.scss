@@ -1,0 +1,91 @@
+@import './colors.scss';
+
+input {
+    border: 0 !important;
+    outline: 0 !important;
+    font-size: 1.4rem !important;
+    color: $darkslategray !important;
+    border-radius: 0 !important;
+    border-bottom: 1px solid $secondary-color !important;
+}
+
+form {
+    box-shadow: unset !important;
+}
+
+button {
+    background: unset !important;
+}
+
+svg {
+    stroke: transparent;
+    stroke-width: 0px;
+}
+
+.ui.message {
+    background: unset !important;
+    border-radius: unset !important;
+    box-shadow: unset !important;
+}
+
+.height-100 {
+    height: 100%;
+}
+
+.width-80 {
+    width: 80% !important;
+}
+
+.border-unset {
+    border: 0 !important;
+}
+
+.box-shadow-unset {
+    box-shadow: unset !important;
+}
+
+.border {
+    border: 1px solid $secondary-color;
+}
+
+.gray-border {
+    border: 1px solid $gray;
+}
+
+.navy-blue-border {
+    border: 1px solid $primary-color !important;
+}
+
+.border-bottom {
+    border-bottom: 1px solid $secondary-color;
+}
+
+.gray-border-bottom {
+    border-bottom: 1px solid $gray;
+}
+
+.empty-button {
+    font-weight: bold !important;
+    font-size: 15px !important;
+    color: $primary-color !important;
+}
+
+.border-radius-10 {
+    border-radius: 10px !important;
+}
+
+.border-radius-20 {
+    border-radius: 20px !important;
+}
+
+.green-button {
+    color: $white !important;
+    font-size: 15px !important;
+    background-color: $secondary-color !important;
+}
+
+.navy-blue-button {
+    color: $white !important;
+    font-size: 15px !important;
+    background-color: $primary-color !important;
+}
