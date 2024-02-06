@@ -1,4 +1,4 @@
 
 const config = {
-    apiUrl: 'http://localhost:9000' // Your current API URL
+    apiUrl: 'http://134.122.105.202:9001' // Your current API URL
 };
