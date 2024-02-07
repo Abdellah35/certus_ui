@@ -19,7 +19,7 @@ function login(username, password) {
     };
 
     return fetch(`${homeConfig.apiUrl}/users/authenticate`, requestOptions)
-        .then(handleResponse)
+        .then(response => handleResponse(response, authenticationService))
         .then(user => {
             // store user details and jwt token in local storage to keep user logged in between page refreshes
             localStorage.setItem('currentUser', JSON.stringify(user));

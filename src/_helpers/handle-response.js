@@ -1,6 +1,5 @@
-import { authenticationService } from '../_services';
 
-export function handleResponse(response) {
+export function handleResponse(response, authenticationService) {
     return response.text().then(text => {
         const data = text && JSON.parse(text);
         if (!response.ok) {
@@ -17,3 +16,4 @@ export function handleResponse(response) {
         return data;
     });
 }
+
