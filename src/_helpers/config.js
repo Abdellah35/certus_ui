@@ -1,4 +1,8 @@
 
-const config = {
-    apiUrl: 'http://localhost:9001' // Your current API URL
-};
+
+export function config() {
+    return {
+        apiUrl: 'http://localhost:9001' // local
+    };
+}
+
