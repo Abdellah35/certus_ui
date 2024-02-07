@@ -1,10 +1,10 @@
 import { BehaviorSubject } from 'rxjs';
 
-import { homeConfig, handleResponse } from '../_helpers';
+import { config, handleResponse } from '../_helpers';
 
 const currentUserSubject = new BehaviorSubject(JSON.parse(localStorage.getItem('currentUser')));
 
-export default {
+export const authenticationService = {
     login,
     logout,
     currentUser: currentUserSubject.asObservable(),
@@ -18,8 +18,8 @@ function login(username, password) {
         body: JSON.stringify({ username, password })
     };
 
-    return fetch(`${homeConfig.apiUrl}/users/authenticate`, requestOptions)
-        .then(response => handleResponse(response, authenticationService))
+    return fetch(`${config.apiUrl}/users/authenticate`, requestOptions)
+        .then(handleResponse)
         .then(user => {
             // store user details and jwt token in local storage to keep user logged in between page refreshes
             localStorage.setItem('currentUser', JSON.stringify(user));
