@@ -1,5 +1,7 @@
+// handle-response.js
+export async function handleResponse(response) {
+    const { default: authenticationService } = await import('../_services/authenticationService');
 
-export function handleResponse(response, authenticationService) {
     return response.text().then(text => {
         const data = text && JSON.parse(text);
         if (!response.ok) {
@@ -16,4 +18,3 @@ export function handleResponse(response, authenticationService) {
         return data;
     });
 }
-
