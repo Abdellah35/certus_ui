@@ -1,6 +1,6 @@
 import { BehaviorSubject } from 'rxjs';
 
-import { config, handleResponse } from '../_helpers';
+import { homeConfig, handleResponse } from '../_helpers';
 
 const currentUserSubject = new BehaviorSubject(JSON.parse(localStorage.getItem('currentUser')));
 
@@ -18,7 +18,7 @@ function login(username, password) {
         body: JSON.stringify({ username, password })
     };
 
-    return fetch(`${config.apiUrl}/users/authenticate`, requestOptions)
+    return fetch(`${homeConfig.apiUrl}/users/authenticate`, requestOptions)
         .then(handleResponse)
         .then(user => {
             // store user details and jwt token in local storage to keep user logged in between page refreshes
